@@ -12,3 +12,5 @@ http://react-blot-demo.now.sh
 
 - Comment your code
 - React Transition Group doesn't offer usable transition callbacks.
+- Write tests
+- Publish on npm
