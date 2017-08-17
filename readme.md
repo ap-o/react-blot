@@ -6,7 +6,7 @@ My main purpose was to improve on the maths of react-toolbox Ripple component. R
 
 ### Demo
 
-https://react-blot-wqizaerkbm.now.sh
+http://react-blot-demo.now.sh
 
 ### Todo
 
