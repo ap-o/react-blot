@@ -16,7 +16,7 @@ module.exports = {
   target: 'web',
 
   // Dev Tool
-  devtool: 'source-map',
+  devtool: 'eval',
 
   // Resolve
   resolve: {
@@ -46,39 +46,41 @@ module.exports = {
 
   module: {
     rules : [
-    {
-      test    : /\.js$/,
-      exclude : /node_modules/,
-      loader  : 'babel-loader'
-    },
-    {
-      test    : /\.css/,
-      loaders : [
-        {
-          loader : 'style-loader'
-        },
-        {
-          loader : 'css-loader',
-          query : {
-            import         : false,
-            importLoaders  : 1,
-            localIdentName : '[name]__[local]___[hash:base64:5]',
-            modules        : true,
-            sourceMap      : true
-          }
-        },
-        {
-          loader  : 'postcss-loader',
-          options : {
-            config : {
-              path : resolve(__dirname, './postcss.config.js')
+      {
+        test    : /\.js$/,
+        exclude : /node_modules/,
+        loader  : 'babel-loader'
+      },
+
+      {
+        test    : /\.css/,
+        loaders : [
+          {
+            loader : 'style-loader'
+          },
+          {
+            loader : 'css-loader',
+            query : {
+              import         : false,
+              importLoaders  : 1,
+              localIdentName : '[name]__[local]___[hash:base64:5]',
+              modules        : true,
+              sourceMap      : true
+            }
+          },
+          {
+            loader  : 'postcss-loader',
+            options : {
+              config : {
+                path : resolve(__dirname, './postcss.config.js')
+              }
             }
           }
-        }
-      ]
-    }
+        ]
+      }
     ]
   },
+
   plugins: [
     new HtmlPlugin({
       template : 'src/index.html',

@@ -5,6 +5,7 @@
         "browser": ["last 2 versions"]
       }
     }],
-    "react"
+    "react",
+    "stage-2"
   ]
 }
