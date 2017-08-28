@@ -1,0 +1,99 @@
+{
+  "name": "ap-o/react-blot",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Blot",
+  "branch": "master",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://react-blot-demo.now.sh",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/ap-o/react-blot",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/react-blot",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "react-blot",
+      "subhead": "Touch blot hoc made with react-transition-group v2",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "react-blot: Touch blot hoc made with react-transition-group v2",
+          "url": "http://react-blot-demo.now.sh"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "ap-o",
+          "repo": "react-blot"
+        }
+      ],
+      "text": "v0.1.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>Just a quick touch blot higher order component, implemented with react-transition-group v2.</p>\n<p>My main purpose was to improve on the maths of react-toolbox Ripple component. Rather than a random spread, i&apos;m using basic geometry to calculate the required blot radius to cover the entire container.</p>\n<h3>Demo</h3>\n<p><a href=\"http://react-blot-demo.now.sh\">http://react-blot-demo.now.sh</a></p>\n<h3>Todo</h3>\n<ul>\n<li>Comment your code</li>\n<li>React Transition Group doesn&apos;t offer usable transition callbacks.</li>\n<li>Write tests</li>\n<li>Publish on npm</li>\n</ul>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/ap-o/react-blot",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/ap-o",
+          "text": "ap-o"
+        }
+      ]
+    }
+  ]
+}
